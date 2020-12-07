@@ -21,7 +21,7 @@ public class AppGridGrindRunner {
 		 */
 		Properties prop = new Properties();
 
-		try (FileReader fileReader = new FileReader("gridgrind/src/test/resources/app.properties")) {
+		try (FileReader fileReader = new FileReader(args[0])) {
 			prop.load(fileReader);
 		} catch (IOException e) {
 			e.printStackTrace();
