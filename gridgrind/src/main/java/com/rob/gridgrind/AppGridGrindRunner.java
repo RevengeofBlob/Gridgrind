@@ -20,13 +20,13 @@ public class AppGridGrindRunner {
 		 * @see http://tutorials.jenkov.com/java-collections/properties.html
 		 */
 		Properties prop = new Properties();
-
+		
 		try (FileReader fileReader = new FileReader(args[0])) {
 			prop.load(fileReader);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-
+		
 		// Set row and col to property value.
 		int row = Integer.parseInt(prop.getProperty("row"));
 		int col = Integer.parseInt(prop.getProperty("col"));
