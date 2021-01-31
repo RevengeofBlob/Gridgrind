@@ -42,7 +42,7 @@ public class AppGridGrindRunner {
 	 * @param rowCount The row size (y-axis).
 	 * @param colCount The column size (x-axis).
 	 * @throw RuntimeException: Will not except nonpositive integers for either parameters.
-	 * @return StringBuilder representation of grid
+	 * @return StringBuilder representation of a random integer grid.
 	 * 
 	 */
 	public static String getGrid(int rowCount, int colCount) {
